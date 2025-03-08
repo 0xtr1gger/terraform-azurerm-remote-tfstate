@@ -17,3 +17,5 @@ output "tfstate_blob_container_url" {
   description = "The URL of the provisioned Azure storage container for state files"
   value       = "${azurerm_storage_account.tfstate_blob_storage.primary_web_endpoint}${azurerm_storage_container.tfstate_container.name}"
 }
+
+## generate backend block for this state automatically
